@@ -1,7 +1,7 @@
 ---
-tags: BARCO, SDET, Python, Gherkin, BDD, Pytest
+tags: BARCO, SDET, Python, Gherkin, BDD, Pytest, Selenium
 ---
-# python_test_plan
+# test_plan
 
 [![hackmd-github-sync-badge](https://hackmd.io/7_s1PVUcSZmWB480MVy85Q/badge)](https://hackmd.io/7_s1PVUcSZmWB480MVy85Q)
 
