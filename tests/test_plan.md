@@ -3,8 +3,6 @@ tags: BARCO, SDET, Python, Gherkin, BDD, Pytest, Selenium
 ---
 # test_plan
 
-[![hackmd-github-sync-badge](https://hackmd.io/7_s1PVUcSZmWB480MVy85Q/badge)](https://hackmd.io/7_s1PVUcSZmWB480MVy85Q)
-
 ## Web UI Test
 - URL: [ClickShare Warranty Info](https://www.barco.com/en/clickshare/support/warranty-info)
 - Scenario: Get ClickShare warranty info
