@@ -24,3 +24,7 @@ tags: BARCO, SDET, Python, Gherkin, BDD, Pytest, Selenium
     4. Cannot find the warranty end date
     - It's a failed case, which means it is not the claimed valid number
 
+## Todo 
+- support more browsers
+- Automate the WebDriver download
+- CrossBrowserTesting
