@@ -1,0 +1,8 @@
+{
+    "webdriver": {
+        "name": "chromedriver",
+        "browserName": "Chrome",
+        "version": "102.0.5005.61",
+        "platform": "linux64"
+    }
+}
