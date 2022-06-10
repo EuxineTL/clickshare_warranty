@@ -33,3 +33,6 @@ To run tests, run the following command from the project's root directory:
 ## Remove Virtual Env
 
     > pipenv --rm
+
+## UI Checks
+Please check the ClickShare_Warranty_Page_Defect_Checks.pdf
