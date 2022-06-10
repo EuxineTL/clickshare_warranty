@@ -26,12 +26,13 @@ tags: BARCO, SDET, Python, Gherkin, BDD, Pytest, Selenium
     - It's a failed test, due to the condition is showing warranty end date.  And the claimed valid number is actually not valid
 - Manual Test 3 for defects
     1. Manually open the page in browser
-    2. Input `456` and get `Minimum 6 characters required` error message, no result block was showed
-    3. Input `中文字測試中` and get `Please enter a valid serial number` error message, result block was showed with input string and description
-    4. Input `how about text` and get no error message, result block was showed with input string and description
-    5. Input `!@#$%^` and get `Please enter a valid serial number` error message, result block was showed with input string and description
-    6. Input `123` and get `Minimum 6 characters required` error message, however, result block of previous test (step 5) was remaining there which looks incorrect.
-
+    2. Input `1863552437 ` (additional space after the valid number) and result block showed warranty info was found with input string and description, the space is fine in this case.
+    3. Input ` 1863552437` (additional space before the valid number) and result block showed product not found with input string and description, the space is difficult to be found in this case.
+    4. Input `how about text` and get no error message, result block was showed with input string and description, space could be a problem.
+    5. Input `456` and get `Minimum 6 characters required` error message, no result block was showed
+    6. Input `中文字測試中` and get `Please enter a valid serial number` error message, result block was showed with input string and description
+    7. Input `!@#$%^` and get `Please enter a valid serial number` error message, result block was showed with input string and description
+    8. Input `123` and get `Minimum 6 characters required` error message, however, result block of previous test (step 5) was remaining there which looks incorrect.
 ## Todo 
 - support more browsers
 - Automate the WebDriver download (In experiments)
