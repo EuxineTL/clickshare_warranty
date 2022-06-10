@@ -23,6 +23,13 @@ tags: BARCO, SDET, Python, Gherkin, BDD, Pytest, Selenium
     3. Verify the `Warranty result for 186232437` is displayed
     4. Cannot find the warranty end date
     - It's a failed case, which means it is not the claimed valid number
+- Manual Test 3 for defects
+    1. Manually open the page in browser
+    2. Input `456` and get `Minimum 6 characters required` error message, no result block was showed
+    3. Input `中文字測試中` and get `Please enter a valid serial number` error message, result block was showed with input string and description
+    4. Input `how about text` and get no error message, result block was showed with input string and description
+    5. Input `!@#$%^` and get `Please enter a valid serial number` error message, result block was showed with input string and description
+    6. Input `123` and get `Minimum 6 characters required` error message, result block of previous test step 5 was remaining there
 
 ## Todo 
 - support more browsers

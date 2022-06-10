@@ -20,9 +20,10 @@ Download the WebDriver and extract it to a directory in PATH, below use /usr/bin
     > curl https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_linux64.zip -o chromedriver_linux64.zip
     > sudo unzip -o chromedriver_linux64.zip -d /usr/bin
 
-Or automated the WebDriver download using config.json and chrome_config(), and then create symbolic link to a folder in the PATH
+!!Experimental!! to automate the WebDriver download using config.json and running temp.py, and you need to manually add the folder to the PATH
 
-    > sudo ln -s /tmp/chromedriver/chromedriver /usr/bin/chromedriver
+    > python3 temp.py
+    > PATH=$PATH:/tmp/chromedriver
 
 ## Run Tests
 To run tests, run the following command from the project's root directory:

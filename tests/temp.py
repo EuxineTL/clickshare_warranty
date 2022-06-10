@@ -1,19 +1,14 @@
-"""
-This module contains shared fixtures.
-"""
 
 import os
 import json
 import subprocess
-import pytest
-import selenium.webdriver
 
 # -------------------------------
 # Fixture: Read the config file
 # -------------------------------
 
-@pytest.fixture 
-def chrome_config(scope='session'):
+#@pytest.fixture 
+def chrome_config():
     CHROME_DRIVER_BASE_URL="https://chromedriver.storage.googleapis.com"
     #https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_linux64.zip
 
@@ -45,18 +40,6 @@ def chrome_config(scope='session'):
         p.wait()
         #p=subprocess.Popen("mv {} {}".format(driver_path, driver_pathver), shell=True)
         #p.wait()
-
-# ----------------------------------------
-# Fixture: Create the WebDriver instance
-# ----------------------------------------
-
-@pytest.fixture
-def browser():
-    # local chrome driver
-    b = selenium.webdriver.Chrome()
-    b.implicitly_wait(10)
-    yield b
-    b.quit()
 
 if __name__ == '__main__':
     chrome_config()
